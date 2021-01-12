@@ -1,9 +1,9 @@
 body {
-  background-image: url('https://i.imgur.com/8eyOW3G.png');
-  background-size:cover;
-  color:#f58d42;
+  background-image: url("https://i.imgur.com/8eyOW3G.png");
+  background-size: cover;
+  color: #f58d42;
 }
 
-h1, p {
+h1 {
   text-align: center;
 }
