@@ -3,7 +3,7 @@ body {
   color: orange;
 }
 
-h1, h2, p {
+h1, h2, p, figcaption {
   text-align: center;
 }
 
