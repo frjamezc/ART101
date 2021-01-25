@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+.pre {
+  text-align: center;
+}
+
+.pre pre {
+  display: inline-block;
+  text-align: left;
+}
+
+hr {
+  width: 50%;
+  border-top: 1px solid orange;
+}
