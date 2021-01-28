@@ -1,0 +1,25 @@
+body {
+  background-color: #292f4a;
+  color: orange;
+}
+
+h1, h2, h3, p, #car {
+  text-align: center;
+}
+
+nav {
+  margin: 0 auto;
+  width: 70%;
+}
+
+a {
+  color: grey;
+}
+
+#home {
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
