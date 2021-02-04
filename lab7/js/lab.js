@@ -7,11 +7,18 @@ Public License
 function sortName() {
   // Opens prompt to take user input
   var userName = window.prompt("Name. Now.");
-  // toLowerCase: Makes every character in the  userName string toLowerCase
-  // split: Splits the string  into an array of characters
-  // sort: Sorts the array in lexicographic order
-  // join: Creates returnable string of array elements
-  return userName.toLowerCase().split('').sort().join('');
+  // split: Splits the string  into an array of characters.
+  // sort: Sorts the array in lexicographic order.
+  //   function: If a and b are the same, yet different cases, sort them as if
+  //      its the same case.
+  // join: Creates returnable string of array elements.
+  return userName.split('').sort(function (a, b) {
+    if(a==b) {
+      return 0;
+    } else {
+      return a.localeCompare(b);
+    }
+  }).join('');
 }
 
-document.writeln("Name fixed, cretin: ", sortName(), "<br>");
+document.writeln("Name fixed, cretin: <br>", sortName(), "<br>");
