@@ -50,3 +50,5 @@ setTimeout(function() {
 setTimeout(function() {
   thirdThing(tst3);
 }, 2000);
+
+document.writeln(thirdThing(tst2));
