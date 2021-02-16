@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/lab.css">
+    <script type="text/javascript" src="./js/lab.js" defer></script>
+    <title>Lab 10</title>
+   </head>
+  <body>
+    <h1>Lab 10 - JavaScript Events and Forms</h1>
+    <h1>
+      WARNING<br>Do not click Strobe more than once if you have health
+      issues. Refresh the page after you are finished using Strobe to quit.
+    </h1>
+    <form action="./index.html">
+      <label for="user-name">Input your name:</label>
+      <input type="text" id="user-name" name="user-name" value="">
+      <input type="button" id="my-button" name="my-button" value="Submit">
+    </form>
+
+    <h2>Challenges</h2>
+    <p>***BONUS***<br>Destroy this page:</p>
+    <form action="index.html">
+      <input type="button" id="first" value="Bernie">
+      <input type="button" id="second" value="Repeat">
+      <input type="button" id="third" value="Strobe">
+    </form>
+    <h2>Problems</h2>
+    <p>
+      The problems Elijah and I encountered revolved around the linking of
+      buttons from HTML and the JavaScript eventListeners. After some Google
+      searches, the answer to all of our problems was the .value property of the
+      elements retrieved by getElementById().
+    </p>
+    <h2>Results</h2>
+    <p>
+      Enter something into the text area above and click submit to sort your
+      name.
+    </p>
+    <h3>Output</h3>
+    <div id="output"></div>
+  </body>
+</html>
