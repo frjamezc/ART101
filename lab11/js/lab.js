@@ -13,6 +13,7 @@ $(document).ready(function() { // Alter document
   );
   $('#challenge button').click(function(){
     $('#challenge .special').toggle();
+    $('#problems button').css('color','blue');
   })
   $('#problems button').click(function(){
     $('#problems .special').toggle();
