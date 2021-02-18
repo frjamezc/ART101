@@ -13,10 +13,13 @@ $(document).ready(function() { // Alter document
   );
   $('#challenge button').click(function(){
     $('#challenge .special').toggle();
-    $('#problems button').css('color','blue');
+    $('#challenge button').css('background-color', 'white');
+    $('#problems button').css('background-color','blue');
   })
   $('#problems button').click(function(){
     $('#problems .special').toggle();
+    $('#problems button').css('background-color', 'white');
+    $('#challenge button').css('background-color','red');
   })
   $('#results button').click(function(){
     $('#results .special').toggle();
