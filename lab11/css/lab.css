@@ -1,0 +1,22 @@
+body {
+  background-color: #292f4a;
+  color: orange;
+  text-align: center;
+}
+
+#results .special {
+  color: red;
+}
+
+#problems .special {
+  color: red;
+}
+
+#challenge .special {
+  color: red;
+}
+
+p {
+  margin-left: 400px;
+  margin-right: 400px;
+}
