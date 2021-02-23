@@ -3,25 +3,12 @@ Author: Francisco Amezcua
 Date: 02/22/21
 Public License
 */
+var houses = ["Gryffindor", "Ravenclaw", "Slytherin", "Hufflepuff"];
 
 function sortHat(name) {
   var length = name.length;
   var mod = length % 4;
-   switch(mod)
-   {
-    case 0:
-      return "Gryffindor";
-      break;
-    case 1:
-      return "Ravenclaw";
-      break;
-    case 2:
-      return "Slytherin";
-      break;
-    case 3:
-      return "Hufflepuff";
-      break;
-   }
+  return houses[mod];
 }
 
 var myButton = document.getElementById("button");
