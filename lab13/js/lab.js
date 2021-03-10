@@ -3,7 +3,6 @@ Author: Francisco Amezcua
 Date: 02/24/21
 Public License
 */
-
 function fizzBuzz() {
   var output = "";
   for(i = 0; i <= 200; i++)
@@ -37,5 +36,4 @@ function fizzBuzz() {
   }
   $("#output").html(output);
 }
-
 fizzBuzz();
