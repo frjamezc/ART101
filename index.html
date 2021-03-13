@@ -4,7 +4,7 @@
 	<title>Art 101</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
   <script type="text"src="./js/chessboardjs-1.0.0/js/chessboardjs-1.0.0.js"></script>
-	<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cs.nyu.edu/~kapp/cs101/processing_on_the_web/processing.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
@@ -49,10 +49,32 @@
 				</ol>
 			</nav>
 		</div>
+		<script type="application/processing">
+			void setup() {
+				size(1000, 1000, P3D);
+				background(0);
+				strokeWeight(10);
+
+			}
+
+
+			void draw() {
+				background(0);
+				//int x = mouseX;
+				//int y = mouseY;
+				translate(width/2, height/2, 0);
+
+				stroke(255 - mouseY/2, mouseX/2, mouseY/2);
+				rotateY((mouseX + mouseY) * .005);
+
+				rotateX((mouseX + mouseY) * .005);
+				noFill();
+
+				box((mouseX+mouseY)/3);
+			}
+		</script>
+		<canvas></canvas>
 	</main>
-
 </body>
-	<script src="./js/site.js">
-
-	</script>
+	<script src="./js/site.js"></script>
 </html>
