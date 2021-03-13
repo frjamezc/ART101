@@ -23,3 +23,9 @@ a {
   margin-right: auto;
   width: 10%;
 }
+
+#pde {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
